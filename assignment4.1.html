@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html>
+<!-- JSExAlertWrite.html -->
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>JavaScript Example: Functions alert() and document.write()</title>
+  <script>
+    alert("Hello, world!");
+    var names,i;
+names = ['Mahesh', 'Kumar', 'John', 'jacob', 'Krishna', 'Laxmi','Jawahar', 'Davidson', 'Godson', 'Ramesh'];
+  for (var i = 0; i < names.length; i++) {
+  var firstLetter = names[i].charAt(0).toLowerCase();
+  if (firstLetter === 'j') {
+    byeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
+}
+    var speakWord = "Good Bye";
+     function speak(name) {
+        document.write(speakWord + " " + name);
+    }
+        var speakWord = "Hello";
+        function speak(name) {
+  document.write(speakWord + " " + name);
+}
+  </script>
 </head>
 <body>
+  <h1>My first JavaScript says:</h1>
+  <script>
+     var i;
 
-<h2>JavaScript Arrays</h2>
-
-<p>Printing the names with hello</p>
-
-<script>
-var names,i;
-names = ['Mahesh', 'Kumar', 'John', 'jacob', 'Krishna', 'Laxmi','Jawahar', 'Davidson', 'Godson', 'Ramesh'];
-
-for (var i=0;i<=names.length();i++)
-{
-
-if(names.upper()=='J')
-{
-  console.log('Goodbye' +i);
-}
-else
-{
-	console.log('Hello' +i);
-}
-}
-
-</script>
-
+     for(i=0;i < 10;i++){
+      document.write("<h2><em>Hello world, again!</em></h2>");
+     }
+     document.write("<p>This document was last modified on "
+        + document.lastModified + ".</p>");
+  </script>
 </body>
 </html>
